@@ -26,7 +26,7 @@
 @section('archive-title')
 {{ $data->title_en }} {{ ' - ' }}
 @endsection
-    <div {{$language == 'dh' ? 'dir=rtl' : 'dir=ltr'}} class="page-container single-gallery dark {{$language == 'dh' ? 'rtl' : 'ltr'}}" style="background-image: url('{{ getMedia(nova_get_setting('website_pattern'), null) }}'); background-repeat: repeat;" >
+    <div {{$language == 'dh' ? 'dir=rtl' : 'dir=ltr'}} class="page-container single-gallery dark {{$language == 'dh' ? 'rtl' : 'ltr'}}" style="background-image: url('{{ getMedia(nova_get_setting('website_pattern_dark'), null) }}'); background-repeat: repeat;" >
       <div class="container-fluid pl-0 pr-0">
 
         <div class="page-featured-image position-relative" style="background-image: url({{ getMedia($data->image, null) }}); min-height: 350px; background-attachment: fixed;">

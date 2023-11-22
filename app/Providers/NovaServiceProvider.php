@@ -116,6 +116,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 MediaHubField::make('Full Logo En', 'header_logo_en')->defaultCollection('branding'),
                 MediaHubField::make('Full Logo Dh', 'header_logo_dh')->defaultCollection('branding'),
                 MediaHubField::make('Logo Icon', 'header_logo_icon')->defaultCollection('branding'),
+                MediaHubField::make('National Emblem', 'header_logo_emblem')->defaultCollection('branding'),
                 MediaHubField::make('Site Shortcut Icon', 'fav_icon')->defaultCollection('branding'),
                 MediaHubField::make('Header Background Image', 'header_background')->defaultCollection('branding'),
                 Text::make('Header Logo Text En', 'header_logo_text_en'),
@@ -139,6 +140,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             Panel::make('Design', [
                 MediaHubField::make('Website Pattern General', 'website_pattern')->defaultCollection('branding'),
                 MediaHubField::make('Website Pattern White', 'website_pattern_white')->defaultCollection('branding'),
+                MediaHubField::make('Website Pattern Dark', 'website_pattern_dark')->defaultCollection('branding'),
                 MediaHubField::make('Fallback Image for User', 'fallback_user_image')->defaultCollection('branding'),
                 MediaHubField::make('Fallback Image for Elements', 'fallback_element_image')->defaultCollection('branding'),
             ]),

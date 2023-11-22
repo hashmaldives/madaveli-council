@@ -7,6 +7,7 @@
                         <a class="header-logo" href="/">
                             <div class="logo-img-container">
                                 <img src="{{ getMedia(nova_get_setting('header_logo_icon'), null) }}">
+                                <img src="{{ getMedia(nova_get_setting('header_logo_emblem'), null) }}">
                             </div>
                             @if ( !empty( nova_get_setting('header_logo_text_en') ) )
                             <div class="logo-text {{ $language == 'dh' ? 'dh' : 'en' }}">
