@@ -1,0 +1,163 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "advoor/nova-editor-js": "^3.0",
+        "alexazartsev/heroicon": "^2.0",
+        "carlos-meneses/laravel-mpdf": "^2.1",
+        "coroowicaksono/chart-js-integration": "^0.4.0",
+        "dniccum/nova-documentation": "^3.1",
+        "drobee/nova-sluggable": "master",
+        "eminiarts/nova-tabs": "^2.1",
+        "formfeed-uk/nova-theming-classes": "^1.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "hash-technologies/link-field": "@dev",
+        "hash-technologies/thaana-text": "@dev",
+        "hash-technologies/thaana-textarea": "@dev",
+        "hashtechnologies/employment-history-array": "*",
+        "hashtechnologies/gce-al-results-array": "*",
+        "hashtechnologies/gce-ol-results-array": "*",
+        "hashtechnologies/hash-admin": "*",
+        "hashtechnologies/higher-education-certificates-array": "*",
+        "hashtechnologies/professional-trainings-array": "*",
+        "hashtechnologies/service-bonds-array": "*",
+        "hashtechnologies/tiny-mce": "*",
+        "kabbouchi/nova-logs-tool": "^2.0",
+        "laravel/framework": "^9.19",
+        "laravel/nova": "4.25.1",
+        "laravel/sanctum": "^2.14.1",
+        "laravel/tinker": "^2.7",
+        "livewire/livewire": "^2.10",
+        "marshmallow/nova-fontawesome": "^2.0",
+        "mpdf/mpdf": "^8.1",
+        "murdercode/nova4-tinymce-editor": "^0.0.5",
+        "outl1ne/nova-color-field": "^2.0",
+        "outl1ne/nova-media-hub": "^1.0",
+        "outl1ne/nova-menu-builder": "^7.0",
+        "outl1ne/nova-settings": "^5.0",
+        "outl1ne/nova-sortable": "^3.1",
+        "robertboes/nova-slider-field": "^0.1.1",
+        "sereny/nova-searchable-filter": "^1.0",
+        "spatie/browsershot": "^3.58",
+        "spatie/laravel-activitylog": "^4.5",
+        "spatie/laravel-permission": "^5.5",
+        "spatie/nova-backup-tool": "^5.0",
+        "trinityrank/google-map-with-autocomplete": "^1.0",
+        "visanduma/nova-two-factor": "^2.2",
+        "vyuldashev/nova-permission": "^3.1",
+        "wdelfuego/nova-datetime": "^1.1",
+        "whitecube/nova-flexible-content": "^1.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": {
+        "nova": {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        },
+        "0": {
+            "type": "path",
+            "url": "./nova-components/HashAdmin"
+        },
+        "nova-sluggable": {
+            "type": "vcs",
+            "url": "https://github.com/TheNerka/nova-sluggable"
+        },
+        "1": {
+            "type": "path",
+            "url": "./nova-components/ThaanaText"
+        },
+        "2": {
+            "type": "path",
+            "url": "./nova-components/TinyMce"
+        },
+        "3": {
+            "type": "path",
+            "url": "./nova-components/ThaanaTextarea"
+        },
+        "5": {
+            "type": "path",
+            "url": "./nova-components/GceAlResultsArray"
+        },
+        "6": {
+            "type": "path",
+            "url": "./nova-components/GceOlResultsArray"
+        },
+        "7": {
+            "type": "path",
+            "url": "./nova-components/EmploymentHistoryArray"
+        },
+        "8": {
+            "type": "path",
+            "url": "./nova-components/HigherEducationCertificatesArray"
+        },
+        "9": {
+            "type": "path",
+            "url": "./nova-components/ProfessionalTrainingsArray"
+        },
+        "10": {
+            "type": "path",
+            "url": "./nova-components/ServiceBondsArray"
+        },
+        "11": {
+            "type": "path",
+            "url": "./nova-components/LinkField"
+        }
+    }
+}

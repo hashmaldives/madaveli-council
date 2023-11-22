@@ -1,0 +1,439 @@
+/*__________________________________________________________________________
+                                  FONTS CONFIG
+__________________________________________________________________________*/
+
+
+/*__________________________________________________________________________
+                                  FONTS CONFIG
+__________________________________________________________________________*/
+
+$primary_color: #0a6594;
+$primary_color2: #072b48;
+$primary_color_dimm: #40a5d8;
+$primary_color_extra_dimm: #71c2eb;
+$link_color: #0a6594;
+$hover_color: #0a6594;
+$color-extra-dark: #01151c;
+$color-super-dark: #010d11;
+$color-dark: #2b393d;
+$color-dark-grey: #415157;
+$color-extra-dark-grey: #242a2c;
+$color-grey: #455b61;
+$color-medium-grey: #546d74;
+$color-text-grey: #637d85;
+$color-light-grey: #c4d2d6;
+$color-extra-light-grey: #F6F7F9;
+$color-light: #e1edf0;
+$color-extra-light: #fafcfd;
+$body_background: #f5f7f7;
+
+$label_font_size: 11px;
+$body_font_size: 10px;
+$section_headinf_font_size: 12px;
+$label_font_size_dh: 13px;
+$body_font_size_dh: 12px;
+$section_headinf_font_size_dh: 15px;
+
+@page {
+    margin: 150px 50px 110px 50px;
+    header: page-header;
+    footer: page-footer;
+}
+
+html {
+    -webkit-print-color-adjust: exact;
+}
+
+a, p, li, span, td, tr {
+    color: $color-grey;
+}
+
+p {
+    line-height: 1.9em;
+    word-wrap: break-word;
+}
+
+.font-waheed {
+    font-family: waheed !important;
+    font-weight: 300 !important;
+}
+
+.font-poppins {
+    font-family: poppins;
+    &.bold {
+        font-family: poppins-500;
+    }
+}
+
+.font-faruma {
+    font-family: faruma;
+}
+
+.font-english-500 {
+    font-family: poppins-500;
+}
+
+.font-english-700 {
+    font-family: poppins-700;
+}
+
+.font-english {
+    font-family: poppins;
+}
+
+.font-dhivehi {
+    font-family: faruma;
+}
+
+.pb-1 {
+    padding-bottom: 0.2rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.5rem;
+}
+
+.pb-3 {
+    padding-bottom: 1rem;
+}
+
+.pb-4 {
+    padding-bottom: 1.5rem;
+}
+
+.pb-5 {
+    padding-bottom: 2rem;
+}
+
+.pt-1 {
+    padding-top: 0.2rem;
+}
+
+.pt-2 {
+    padding-top: 0.5rem;
+}
+
+.pt-3 {
+    padding-top: 1rem;
+}
+
+.pt-4 {
+    padding-top: 1.5rem;
+}
+
+.pt-5 {
+    padding-top: 2rem;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+
+/*==============================================================
+                             HEADER
+==============================================================*/
+.header {
+    .logo {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo svg {
+    width: 510px;
+    padding-right: 41px;
+    padding-left: 41px;
+    height: auto;
+}
+
+.title {
+    color: #455b61;
+    height: 50px;
+    font-size: 10rem;
+}
+
+h2, span {
+    color: #455b61;
+    font-size: 10rem;
+}
+
+.eng-title {
+    text-align: left;
+}
+
+.dh-title {
+    text-align: right;
+}
+
+/*==============================================================
+                            / HEADER
+==============================================================*/
+
+.form-meta {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .number {
+
+    }
+    .date {
+
+    }
+    .number, .date {
+        p {
+            margin: 0;
+            font-size: $label_font_size;
+            color: $color-grey;
+        }
+    }
+}
+
+.form-title {
+    h1, h2, h3, h4, h5, h6 {
+        color: $color-grey;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+.form-section {
+    padding-bottom: 25px;
+    // Enable inline block and width to make sections fall outside of page jump to next page.
+    // display: inline-block;
+    // width: 100%;
+    .form-row {
+        .col6 {
+            width: 47%;
+            padding-left: 1.4%;
+            padding-right: 1.4%;
+        }
+        .col4 {
+            width: 30.33%;
+            padding-left: 1.4%;
+            padding-right: 1.4%;
+        }
+        .col3 {
+            width: 22%;
+            padding-left: 1.4%;
+            padding-right: 1.4%;
+        }
+        .col2 {
+            width: 17%;
+            padding-left: 1.4%;
+            padding-right: 1.4%;
+        }
+    }
+    &.rtl {
+        .form-row {
+            .col6, .col4, .col3, .col2 {
+                float: right;
+            }
+        }
+    }
+    &.ltr {
+        .form-row {
+            .col6, .col4, .col3, .col2 {
+                float: left;
+            }
+        }
+    }
+    .form-section-title {
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+        }
+        &.font-dhivehi {
+            h1, h2, h3, h4, h5, h6, p {
+                font-size: $section_headinf_font_size_dh;
+                text-align: center !important;
+                line-height: 1.5;
+            }
+        }
+        border-radius: 5px;
+        color: $primary_color;
+        text-align: center;
+        font-weight: 500;
+        //border: 1px solid $primary_color_dimm;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: $color-light-grey;
+    }
+    .form-text-field {
+        .label {
+            font-size: $label_font_size;
+            margin: 0;
+            padding-bottom: 5px;
+            color: $color-grey;
+            &.font-dhivehi {
+                font-size: $label_font_size_dh;
+            }
+        }
+        .data {
+            font-size: $body_font_size;
+            margin: 0;
+            padding: 3px 10px;
+            border: 1px solid $color-light-grey;
+            border-radius: 5px;
+            color: $color-grey;
+            line-height: 1.5rem;
+            &.font-dhivehi {
+                font-size: $body_font_size_dh;
+                line-height: 1.8rem;
+            }
+        }
+        margin-bottom: 15px;
+    }
+    .table {
+        border-collapse: collapse;
+        width: 100%;
+        thead {
+            tr {
+                th {
+                    text-align: auto;
+                }
+            }
+        }
+        th, td {
+            border: 0.5px solid $color-light-grey;
+            font-size: $body_font_size;
+            padding: 10px;
+        }
+        th {
+            color: $primary_color;
+            font-weight: 300;
+        }
+        td {
+            color: $color-grey;
+        }
+        &.table-dhivehi {
+            th, tr {
+                text-align: right;
+            }
+        }
+        thead {
+            th {
+                background-color: $color-light-grey !important;
+            }
+        }
+    }
+    .form-row {
+        .form-checkbox {
+            margin-bottom: 15px;
+            .icon-container {
+                float: left;
+                .icon {
+                    overflow: hidden;
+                    border: 1.5px solid $color-medium-grey;
+                    padding: 3px;
+                    img {
+                    }
+                }
+            }
+            .text {
+                width: 70%;
+                padding-left: 15px;
+                padding-right: 15px;
+                float: left;
+                p {
+                    margin: 0;
+                    color: $color-grey;
+                    line-height: 25px;
+                    font-size: $label_font_size;
+                    &.font-dhivehi {
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.body-text {
+    font-size: $body_font_size;
+    margin: 0;
+    color: $color-grey;
+    line-height: 1.8rem;
+    &.font-dhivehi {
+        font-size: $body_font_size_dh;
+        line-height: 1.8rem;
+    }
+}
+
+.body-heading {
+    font-size: $label_font_size;
+    margin: 0;
+    color: $color-grey;
+    line-height: 1.8rem;
+    &.font-dhivehi {
+        font-size: $label_font_size_dh;
+        line-height: 1.8rem;
+        font-weight: 300;
+    }
+}
+
+.body-label {
+    font-size: $body_font_size;
+    margin: 0;
+    padding-bottom: 5px;
+    color: $color-grey;
+    &.font-dhivehi {
+        font-size: $body_font_size_dh;
+    }
+}
+
+
+/*==============================================================
+                            FOOTER
+==============================================================*/
+
+footer {
+    width: 100%;
+    .line-container {
+        padding-right: 10px;
+        padding-left: 10px;
+        .line {
+            width: 100%;
+            border-top: 1px solid #c4d2d6;
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
+
+
+
+/*==============================================================
+                           / FOOTER
+==============================================================*/

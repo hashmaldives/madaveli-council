@@ -1,0 +1,22 @@
+@font-face {
+  font-family: faseyha;
+  src: url(../fonts/dh/MV_Faseyha.otf);
+}
+
+@font-face {
+  font-family: waheed;
+  src: url(../fonts/dh/MVWaheed.otf);
+}
+
+body {
+  font-family: Nunito Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji, faseyha;
+}
+
+body p, body span, body ul, body li, body ol {
+  font-family: Nunito Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji, faseyha;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: Nunito Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji, waheed;
+}
+/*# sourceMappingURL=editor.css.map */
