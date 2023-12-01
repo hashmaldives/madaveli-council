@@ -14,7 +14,7 @@ class LanguageToggle extends Component
     public function mount($switchId) {
         $this->currenLanguage = nova_get_setting('default_language') == 'en' ? 'en' : 'dh';
         $this->switchId = $switchId;
-        $this->language = Session::get('language') == 'dh' ? false : true;
+        $this->language = Session::get('language') == 'en' ? 1 : 0;
     }
 
     public function updated() {
